@@ -1,12 +1,102 @@
+body{
+    background-color: rgba(89, 72, 172, 0.958);
+    place-items: center;
+    display: grid;
+    justify-content: center;
+}
+.container {
+    display: grid;
+    place-items: center;
+    justify-content: center;
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+}
+.semaforo {
+    width: 100px;
+    height: 200px;
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    background-color: rgba(70, 15, 15, 0.585);
+    padding: 10px;
+    border-style: groove;
+    border-color: #000000;
+}
+.luces-circulo {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.3);
+    position: relative;
+    border-style: groove;
+    border-color: #000000
+}
+.luces-circulo ::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.6);
+    position: absolute;
+    top: 5%;
+}
+.stick {
+    width: 8px;
+    height: 450px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-style: groove;
+    border-color: #000000
+}
+.floor {
+    width: 300px;
+    height: 3px;
+    box-shadow: 0 0 10px 2px #a54d2a ;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-style: groove;
+    border-color: #000000
+}
+.red {
+    background-color: rgb(240, 10, 10);
+    cursor: pointer;
+}
+.yellow {
+    background-color: #efe004;
+    cursor: pointer;
+}
+.green {
+    background-color: rgb(59, 218, 54);
+    cursor: pointer;
+}
+.selectedGreen {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.3);
+    position: relative;
+    background-color: rgb(59, 218, 54);
+    box-shadow: 0 0 10px 10px #9de16f ;
+    cursor: pointer;
+}
+.selectedYellow {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.3);
+    position: relative;
+    background-color: #efe004;
+    box-shadow: 0 0 10px 10px #ffee00 ;
+    cursor: pointer;
+}
+.selectedRed {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.3);
+    position: relative;
+    background-color: rgb(240, 10, 10);
+    box-shadow: 0 0 10px 10px #ed6631 ;
+    cursor: pointer;
+}
